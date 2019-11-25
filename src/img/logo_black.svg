@@ -1,0 +1,31 @@
+<svg version="1.1" id="triangle_x5F_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 600 633" style="enable-background:new 0 0 600 633;" xml:space="preserve">
+	<defs>
+<style type="text/css">
+	.st0{fill:none;stroke:black;stroke-width:15;stroke-miterlimit:10;}
+
+	#triangle_x5F_logo{
+		transition: all .3s;
+	}
+
+	.animate_add{
+		transform: rotate(90deg);
+	}
+	#triangle_x5F_logo:hover .st0{
+		fill: rgb(16,201,195);
+	}
+</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var triangle = document.getElementById('triangle_x5F_logo');
+
+				triangle.addEventListener('click',function(){
+					this.classList.toggle('animate_add');
+				});
+			};
+		</script>
+	</defs>
+<polygon id="topLeft" class="st0" points="131.5,368.5 258.8,147 4.2,147 "/>
+<polygon id="topRight" class="st0" points="389.5,367.5 516.8,147 262.2,147 "/>
+<polygon id="bottom" class="st0" points="131,368 261,146 389,368 260,590 "/>
+</svg>

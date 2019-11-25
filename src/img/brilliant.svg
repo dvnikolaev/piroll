@@ -1,0 +1,51 @@
+<svg version="1.1" id="brilliant" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+	<defs>
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;}
+
+	.redElement{
+		fill: rgb(16, 201, 195);
+	}
+
+	#top,#topLeft,#topRight,#bottomLeft,#bottomRight{
+		transition: all 1s;
+	}
+
+</style>
+<script type="text/javascript">
+	window.onload = function(){
+
+	var main = document.getElementById("brilliant");
+	var topRight = document.getElementById("topRight");
+	var topLeft = document.getElementById("topLeft");
+	var top = document.getElementById("top");
+	var bottomRight = document.getElementById("bottomRight");
+	var bottomLeft = document.getElementById("bottomLeft");
+
+
+	main.addEventListener("mouseenter", function(){
+		topRight.classList.add("redElement");
+		topLeft.classList.add("redElement");
+		top.classList.add("redElement");
+		bottomRight.classList.add("redElement");
+		bottomLeft.classList.add("redElement");
+	});
+	main.addEventListener("mouseleave", function(){
+		topRight.classList.remove("redElement");
+		topLeft.classList.remove("redElement");
+		top.classList.remove("redElement");
+		bottomRight.classList.remove("redElement");
+		bottomLeft.classList.remove("redElement");
+	});
+
+	};
+</script>
+	</defs>
+<path id="topLeft" class="st0" d="M3.4,15h19.1L13,5.6c-0.1,0.1-0.2,0.1-0.4,0.1l-9.2,9.2C3.4,14.9,3.4,15,3.4,15z"/>
+<path id="topRight" class="st0" d="M32.2,5.5c-0.1,0-0.1,0-0.2-0.1L22.5,15h19c0-0.1,0-0.1,0-0.2L32.2,5.5z"/>
+<path id="top" class="st0" d="M32,5.4H13.1c0,0,0,0.1,0,0.1c0,0,0,0,0,0l9.5,9.5L32,5.4C32,5.5,32,5.4,32,5.4z"/>
+<path id="bottomLeft" class="st0" d="M22.5,40.6V15H3.4c0,0.1,0,0.1,0,0.2l18.9,25.3C22.4,40.5,22.4,40.5,22.5,40.6z"/>
+<path id="bottomRight" class="st0" d="M41.5,15h-19v25.5c0.1,0,0.1,0,0.2,0l18.8-25.2c0,0,0,0,0-0.1C41.5,15.2,41.5,15.1,41.5,15z"
+	/>
+</svg>
